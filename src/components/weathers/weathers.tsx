@@ -5,12 +5,19 @@ import Weather from '../weather/weather';
 import styles from './weathers.module.css';
 import { WeathersProps, WeathersStates } from '../../interfaces/weathers';
 
+/**
+ * Shows current day weather and the following days' weather details
+ */
 class Weathers extends React.Component<WeathersProps, WeathersStates> {
   state: WeathersStates = {
     loading: false,
     weathersData: null,
   };
 
+  /**
+   * Gets weather data from "weatherapi"
+   * @param cityName string
+   */
   getWeatherData(cityName: string) {
     this.setState({ loading: true });
     axios
@@ -24,11 +31,18 @@ class Weathers extends React.Component<WeathersProps, WeathersStates> {
       });
   }
 
+  /**
+   * Lifecycle hook to run the API when component starts
+   */
   componentDidMount() {
     const { cityName } = this.props;
     this.getWeatherData(cityName);
   }
 
+  /**
+   * Lifecycle hook to run the API when the prop of cityName changes
+   * @param prevProps WeatherProps
+   */
   componentDidUpdate(prevProps: WeathersProps) {
     if (this.props.cityName !== prevProps.cityName) {
       const { cityName } = this.props;

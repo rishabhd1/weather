@@ -4,6 +4,9 @@ import styles from './weather.module.css';
 import { WeatherProps, WeatherStates } from '../../interfaces/weather';
 import { getDay } from '../../utils/helper';
 
+/**
+ * Show a tile of weather for a single day
+ */
 class Weather extends React.Component<WeatherProps, WeatherStates> {
   state: WeatherStates = {};
 

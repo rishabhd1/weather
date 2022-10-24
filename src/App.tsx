@@ -1,10 +1,12 @@
 import React from 'react';
-import { render } from 'react-dom';
 
 import styles from './App.module.css';
 import Weathers from './components/weathers/weathers';
 import { AppProps, AppStates, City } from './interfaces/app';
 
+/**
+ * App Component
+ */
 class App extends React.Component<AppProps, AppStates> {
   state: AppStates = {
     cities: [
@@ -27,6 +29,10 @@ class App extends React.Component<AppProps, AppStates> {
     },
   };
 
+  /**
+   * Changes tab on click
+   * @param city City
+   */
   onTabClick = (city: City) => {
     this.setState({ selectedCity: city });
   };
