@@ -2,7 +2,8 @@ import React from 'react';
 
 import styles from './App.module.css';
 import Weathers from './components/weathers/weathers';
-import { AppProps, AppStates, City } from './interfaces/app';
+import { AppProps, AppStates } from './interfaces/app';
+import { City } from './interfaces/weathers';
 
 /**
  * App Component
