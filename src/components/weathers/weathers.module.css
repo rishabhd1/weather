@@ -1,0 +1,39 @@
+.currentWeather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: aqua;
+  margin-bottom: 5px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.today {
+  font-size: 20px;
+  padding: 5px 0px;
+}
+
+.todayWeather {
+  display: flex;
+  align-items: center;
+}
+
+.todayWeatherDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.todayWeatherTemp {
+  font-family: 'Dosis', sans-serif;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.dailyWeathers {
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,24 @@
+.weather {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.weather:first-child {
+  border-radius: 0px 0px 0px 5px;
+}
+
+.weather:last-child {
+  border-radius: 0px 0px 5px 0px;
+}
+
+.weatherImg {
+  padding: 2.5px;
+  height: 40px;
+}
+
+.temp {
+  font-weight: bold;
+}

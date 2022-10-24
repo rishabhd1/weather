@@ -1,0 +1,27 @@
+.app {
+  width: 400px;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.tab {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.activeTab {
+  font-weight: bold;
+  color: lightblue;
+}
+
+.weathers {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+  padding: 5px;
+}
